@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #e0f1fc;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  overflow: hidden;
+}
+
+.top-section {
+  padding: 30px;
+}
+
+.top-section h2 {
+  color: hsl(179, 62%, 43%);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.top-section p:first-of-type {
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.middle-section > :nth-child(2) {
+  font-size: 1.7rem;
+}
+.top-section p:last-of-type {
+  color: #9aa7be;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.middle-section {
+  background-color: #2ab2af;
+  color: white;
+  padding: 25px 30px;
+}
+
+.middle-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 10px;
+  color: #c4f3f1;
+}
+
+.middle-section p {
+  margin: 10px 0 20px;
+  font-size: 14px;
+}
+
+.middle-section button {
+  background-color: #c0df34;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.middle-section button:hover {
+  transform: scale(1.02);
+}
+
+.bottom-section {
+  background-color: #4abebd;
+  color: white;
+  padding: 25px 30px;
+}
+
+.bottom-section h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.bottom-section ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.8;
+}
+@media (min-width: 1000px) {
+  .card {
+    display: grid;
+    width: 669px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .top-section {
+    grid-column: span 2;
+  }
+  .middle-section {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .bottom-section {
+    grid-row: 2;
+  }
+}
