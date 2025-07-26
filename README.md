@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./capture1.jpg);
+![](./capture1.png)
+![](./capture2.png)
 
 
 ### Links
